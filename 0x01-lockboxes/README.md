@@ -1,0 +1,1 @@
+The canUnlockAll function is a Python implementation to determine if all the boxes in a given list of boxes can be opened. Each box is numbered sequentially from 0 to n-1, and each box may contain keys to other boxes. The function utilizes a breadth-first search (BFS) algorithm to efficiently explore and validate the box unlocking process.
