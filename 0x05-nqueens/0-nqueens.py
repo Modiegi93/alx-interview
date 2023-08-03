@@ -15,15 +15,15 @@ def get_input():
     global n
     n = 0
     if len(sys.argv) != 2:
-        print("Usage: nqueens N")
+        print("Usage: nqueens N\n")
         sys.exit(1)
     try:
         n = int(sys.argv[1])
     except Exception:
-        print("N must be a number")
+        print("N must be a number\n")
         sys.exit(1)
     if n < 4:
-        print("N must be atleast 4")
+        print("N must be atleast 4\n")
         sys.exit(1)
     return n
 
