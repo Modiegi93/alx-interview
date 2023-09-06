@@ -1,5 +1,11 @@
+#!/usr/bin/python3
+"""Prime game"""
+
+
 def isWinner(x, nums):
+    """Returns winner of the game"""
     def is_prime(num):
+        """Returns prime number from the set"""
         if num < 2:
             return False
         for i in range(2, int(num**0.5) + 1):
@@ -8,7 +14,7 @@ def isWinner(x, nums):
         return True
 
     def can_win(n):
-        # Generate a list of booleans where prime[i] is True if i is prime
+        """Opponent has no prime numbers left to choose"""
         prime = [False, False] + [True] * (n - 1)
 
         for p in range(2, int(n**0.5) + 1):
